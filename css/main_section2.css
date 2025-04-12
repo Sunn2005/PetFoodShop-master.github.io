@@ -1,0 +1,70 @@
+/* the styles for the main */
+main {
+    clear: both;
+    margin-top: 10px;
+    height: 580px;
+}
+
+main h2 {
+    font-size: 180%;
+    border: 2px solid black;
+    background-color: linen;
+    width: 280px;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.item_box:hover {
+    font-style: italic;
+    text-decoration: underline solid 2px;
+    width: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 650px;
+    margin: auto auto;
+}
+.item {
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.item2 {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.item3 {
+    flex-basis: 35%;
+    display: flex;
+    justify-content: center;
+    margin-right: 15%;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.item-box {
+    text-align: center;
+}
+main .container .item .item_box h3 {
+    padding: 3px;
+}
+
+/* the styles for links in main section */
+main a:link, main a:visited {
+    text-decoration: none;
+    color: black;
+}
+main a:hover, main a:focus {
+    font-style: italic;
+}
+

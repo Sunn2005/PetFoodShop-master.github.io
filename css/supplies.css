@@ -1,0 +1,67 @@
+/* the styles for the main */
+main {
+    clear: both;
+    margin-top: 10px;
+}
+
+main h2 {
+    font-size: 160%;
+    border: 2px solid black;
+    background-color: linen;
+    width: 15%;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+/* the style for the section */
+section {
+    #border-top: 1px solid #a9975b;
+    #background-color: linen;
+    text-align: center;
+}
+section h3 {
+    font-size: 90%;
+}
+section .container .item .item_box img {
+    width: 300px;
+}
+
+/* the styles for container */
+.item_box:hover {
+    font-style: italic;
+    text-decoration: underline solid 2px;
+    width: auto;
+}
+section .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 1000px;
+    margin: 10px auto;
+}
+section .container .item {
+    flex-basis: 24%;
+    display: flex;
+    justify-content: center;
+    margin: 0 16px 40px 16px;
+    text-align: center;
+    background-color: linen;
+}
+section .container .item .item-box {
+    text-align: center;
+
+}
+main .container .item .item_box h3 {
+    font-size: 100%;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+/* the styles for links in main section */
+main a:link, main a:visited {
+    text-decoration: none;
+    color: black;
+}

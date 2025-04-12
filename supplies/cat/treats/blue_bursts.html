@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetShop - Blue Buffalo Bursts Crunchy Cat Treats, Seafood Flavor</title>
+    <link rel="shortcut icon" href="../../../images/paw.png">
+    <link rel="stylesheet" href="../../../css/header_and_footer.css">
+    <link rel="stylesheet" href="../../../css/products.css">
+    <link rel="stylesheet" href="../../../css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <table class="header1">
+            <tr>
+                <th class="img_logo"><img src="../../../images/paw.png" alt="Paw" height=70></th>
+                <th class="pet_shop"><h1><a href="../../../index.html">PetShop</a></h1></th>
+                <th class="space"><p></p></th>
+                <th class="info"><h2 class="about_us"><a href="../../../information/about_us.html">About Us</a></h2></th>
+                <th class="info"><h2 class="brands"><a href="../../../information/brands.html">Brands</a></h2></th>
+                <th class="space"><p></p></th>
+                <th class="img_wishlist"><a href="../../../information/wishlist.html">
+                    <img src="../../../images/wishlist.png" alt="Wish List" height=70 title="Wish List"></a></th>            </tr>
+        </table>
+        <p></p>
+
+        <nav id="nav_menu">
+            <ul>
+                <li id="house"><a href="../../../index.html">
+                    <img src="../../../images/house.png" alt="Home page" height="40" title="Homepage"></a></li>
+                <li><a href="../../../pet_header/dog.html">
+                    <img src="../../../images/pets/dog.png" alt="picture of the dog" height="40">&nbsp;&nbsp;Dog</a></li>
+                <li><a href="../../../pet_header/cat.html">
+                    <img src="../../../images/pets/cat.png" alt="picture of the cat" height="40">&nbsp;&nbsp;Cat</a></li>
+                <li><a href="../../../pet_header/fish.html">
+                    <img src="../../../images/pets/fish.png" alt="picture of the fish" height="40">&nbsp;&nbsp;Fish</a></li>
+                <li><a href="../../../pet_header/bird.html">
+                    <img src="../../../images/pets/bird.png" alt="picture of the bird" height="40">&nbsp;&nbsp;Bird</a></li>
+                <li id="last_item"><p>Small Pet</p>
+                    <ul>
+                        <li><a href="../../../pet_header/hamster.html">
+                            <img src="../../../images/pets/hamster.png" alt="picture of the hamster" height="30">Hamster</a></li>
+                        <li><a href="../../../pet_header/chinchilla.html">
+                            <img src="../../../images/pets/chinchilla.png" alt="picture of the chinchilla" height="30">Chinchilla</a></li>
+                        <li><a href="../../../pet_header/guinea_pig.html">
+                            <img src="../../../images/pets/guinea_pig.png" alt="picture of the guinea pig" height="30">Guinea Pig</a></li>
+                        <li><a href="../../../pet_header/rabbit.html">
+                            <img src="../../../images/pets/rabbit.png" alt="picture of the rabbit" height="30">Rabbit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <aside>
+        <div class="slider middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <div class="slide s1"><img src="blue_bursts/front.png"></div>
+                <div class="slide"><img src="blue_bursts/info1.png"></div>
+                <div class="slide"><img src="blue_bursts/info2.png"></div>
+                <div class="slide"><img src="blue_bursts/info5.png"></div>
+                <div class="slide"><img src="blue_bursts/info4.png"></div>
+            </div>
+            <div class="navigation" title="click to switch between images">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h2>Blue Buffalo Bursts Crunchy Cat Treats, Seafood Flavor</h2>
+        <br>
+        <h4>Price:&nbsp;&nbsp;&nbsp;<b class="price">$7.99</b></h4>
+        <br>
+        <form>
+            <fieldset id="size">
+                <legend>Size:</legend>
+                <input type="radio" name="size" id="5oz" value="5oz">
+                <label for="5oz">5 oz&emsp;- $2.99</label><br>
+                <input type="radio" name="size" id="12oz" value="12oz" checked>
+                <label for="12oz">12 oz&emsp;- $7.99</label><br>
+            </fieldset>
+            <input type="submit" name="add_to_card" id="add" value="Add to Card">
+        </form>
+        <br>
+        <h4>About this item:</h4>
+        <ul>
+            <li>STARTS WITH REAL FISH: Unlike many other brands, these cat treats feature real fish as the first
+                ingredient to tempt your feline friend</li>
+            <li>TWO TEMPTING TEXTURES: Give your cat the best of both worlds – these crunchy cat treats feature a
+                crunchy shell and a delicious creamy center cats can’t resist</li>
+            <li>HEALTHY CAT TREATS: BLUE Bursts treats for cats are packed with the healthy, wholesome ingredients
+                you’ll feel good about giving</li>
+            <li>ONLY WHOLESOME INGREDIENTS: BLUE cat treats contain NO poultry by-product meals, NO corn, wheat or
+                soy, and NO artificial flavors or preservatives</li>
+        </ul>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

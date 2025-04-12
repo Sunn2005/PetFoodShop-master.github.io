@@ -1,0 +1,250 @@
+/* the styles for the main */
+main {
+    clear: both;
+    margin-top: 10px;
+    height: 580px;
+}
+/* the styles for headers*/
+main h3 {
+    text-align: center;
+    width: 30%;
+    margin: 30px auto;
+}
+main h2 {
+    font-size: 180%;
+    border: 2px solid black;
+    background-color: linen;
+    width: 230px;
+    padding: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+/* the styles for container and its items */
+.item_box:hover {
+    font-style: italic;
+    text-decoration: underline solid 2px;
+    width: auto;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    margin: auto auto;
+}
+.item {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.item-box {
+    text-align: center;
+}
+main .container .item .item_box h3 {
+    font-size: 100%;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+/* the styles for links in main section */
+main a:link, main a:visited {
+    text-decoration: none;
+    color: black;
+}
+main a:hover, main a:focus {
+    font-style: italic;
+}
+
+/* the styles for brands */
+main #brands_square {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 75%;
+    margin: auto auto;
+}
+main #brands_square p {
+    width: 7em;
+    height: 7em;
+    border: 1px solid #f0cbab;
+    box-shadow: 0 0 10px 6px #f0cbab;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120%;
+    font-weight: bold;
+    color: darkred;
+    text-decoration: underline;
+}
+/* the styles for "about us" */
+main #about_us {
+    width: 70%;
+    margin: auto auto;
+}
+main #about_us #column1{
+    float: left;
+    width: 50%;
+}
+main #about_us #column1 img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+main #about_us #column1 p{
+    float: left;
+    align-items: center;
+    display: flex;
+    margin: 1%;
+    width: 85%;
+    height: 50px;
+}
+main #about_us #column2{
+    float: left;
+    width: 50%;
+}
+main #about_us #column2 img{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+main #about_us #column2 p{
+    float: left;
+    align-items: center;
+    display: flex;
+    margin: 1%;
+    width: 85%;
+    height: 50px;
+}
+
+
+/* the styles for wish list */
+main #wishlist_block {
+    width: 70%;
+    height: 500px;
+    border: 1px solid #f0cbab;
+    box-shadow: 0 0 10px 6px #f0cbab;
+    justify-content: center;
+    margin: 10px auto 20px auto;
+}
+
+/* the styles for main section for first page*/
+#first_page{
+    width: 75%;
+    margin: auto auto;
+}
+main h1{
+    text-align: center;
+}
+main ul{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+.main-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.main-left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    height: 520px;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.slideshow .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.slideshow .slide:first-child {
+    opacity: 1;
+}
+
+.main-right {
+    flex: 2;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 500px;
+}
+
+.welcome-section h1 {
+    font-size: 14px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.welcome-section .intro-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.features-section .features-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.features-section .features-list li {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+
+
+/*@keyframes moveright{
+    from{margin-left: 1%;}
+    to{margin-left: 90%;}
+}
+main #dog{
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: moveright ease-in-out 10s infinite alternate;
+}
+main #dog img{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
+main #dog a{
+    display: block;
+}*/

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PetShop - Purina ONE True Instinct Dry Dog Food, Real Turkey & Venison</title>
+    <link rel="shortcut icon" href="../../../../images/paw.png">
+    <link rel="stylesheet" href="../../../../css/header_and_footer.css">
+    <link rel="stylesheet" href="../../../../css/products.css">
+    <link rel="stylesheet" href="../../../../css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../../../../js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+
+</head>
+<body>
+    <header>
+        <table class="header1">
+            <tr>
+                <th class="img_logo"><img src="../../../../images/paw.png" alt="Paw" height=70></th>
+                <th class="pet_shop"><h1><a href="../../../../index.html">PetShop</a></h1></th>
+                <th class="space"><p></p></th>
+                <th class="info"><h2 class="about_us"><a href="../../../../information/about_us.html">About Us</a></h2></th>
+                <th class="info"><h2 class="brands"><a href="../../../../information/brands.html">Brands</a></h2></th>
+                <th class="space"><p></p></th>
+                <th class="img_wishlist"><a href="../../../../information/wishlist.html">
+                    <img src="../../../../images/wishlist.png" alt="Wish List" height=70 title="Wish List"></a></th>            </tr>
+        </table>
+        <p></p>
+
+        <nav id="nav_menu">
+            <ul>
+                <li id="house"><a href="../../../../index.html">
+                    <img src="../../../../images/house.png" alt="Home page" height="40" title="Homepage"></a></li>
+                <li><a href="../../../../pet_header/dog.html">
+                    <img src="../../../../images/pets/dog.png" alt="picture of the dog" height="40">&nbsp;&nbsp;Dog</a></li>
+                <li><a href="../../../../pet_header/cat.html">
+                    <img src="../../../../images/pets/cat.png" alt="picture of the cat" height="40">&nbsp;&nbsp;Cat</a></li>
+                <li><a href="../../../../pet_header/fish.html">
+                    <img src="../../../../images/pets/fish.png" alt="picture of the fish" height="40">&nbsp;&nbsp;Fish</a></li>
+                <li><a href="../../../../pet_header/bird.html">
+                    <img src="../../../../images/pets/bird.png" alt="picture of the bird" height="40">&nbsp;&nbsp;Bird</a></li>
+                <li id="last_item"><p>Small Pet</p>
+                    <ul>
+                        <li><a href="../../../../pet_header/hamster.html">
+                            <img src="../../../../images/pets/hamster.png" alt="picture of the hamster" height="30">Hamster</a></li>
+                        <li><a href="../../../../pet_header/chinchilla.html">
+                            <img src="../../../../images/pets/chinchilla.png" alt="picture of the chinchilla" height="30">Chinchilla</a></li>
+                        <li><a href="../../../../pet_header/guinea_pig.html">
+                            <img src="../../../../images/pets/guinea_pig.png" alt="picture of the guinea pig" height="30">Guinea Pig</a></li>
+                        <li><a href="../../../../pet_header/rabbit.html">
+                            <img src="../../../../images/pets/rabbit.png" alt="picture of the rabbit" height="30">Rabbit</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+    <aside>
+        <div class="slider middle">
+            <div class="slides">
+                <input type="radio" name="r" id="r1" checked>
+                <input type="radio" name="r" id="r2">
+                <input type="radio" name="r" id="r3">
+                <input type="radio" name="r" id="r4">
+                <input type="radio" name="r" id="r5">
+                <div class="slide s1"><img src="turkey_venison/front.png"></div>
+                <div class="slide"><img src="turkey_venison/back.png"></div>
+                <div class="slide"><img src="turkey_venison/zoom.png"></div>
+                <div class="slide"><img src="turkey_venison/realturkey.png"></div>
+                <div class="slide"><img src="turkey_venison/ingredients.png"></div>
+            </div>
+            <div class="navigation" title="click to switch between images">
+                <label for="r1" class="bar"></label>
+                <label for="r2" class="bar"></label>
+                <label for="r3" class="bar"></label>
+                <label for="r4" class="bar"></label>
+                <label for="r5" class="bar"></label>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h2>Purina ONE True Instinct Dry Dog Food, Real Turkey & Venison</h2>
+        <br>
+        <h4>Price:&nbsp;&nbsp;&nbsp;<b class="price">$45.99</b>&emsp;&emsp;/ for 27.5lb</h4>
+        <br>
+        <form>
+            <fieldset id="size">
+                <legend>Size:</legend>
+                <input type="radio" name="size" id="7.4lb" value="7.4 Pound">
+                <label for="7.4lb">7.4 Pound&ensp;&emsp;- $17.99</label><br>
+                <input type="radio" name="size" id="15lb" value="15 Pound">
+                <label for="15lb">15 Pound&emsp;- $31.99</label><br>
+                <input type="radio" name="size" id="27.5lb" value="27.5 Pound" checked>
+                <label for="27.5lb">27.5 Pound&emsp;- $45.99</label><br>
+                <input type="radio" name="size" id="36lb" value="36 Pound">
+                <label for="36lb">36 Pound&emsp;- $57.99</label>
+            </fieldset>
+            <input type="submit" name="add_to_card" id="add" value="Add to Card">
+        </form>
+        <br>
+        <h4>About this item:</h4>
+        <ul>
+            <li>30% protein content helps support strong muscles including a healthy heart</li>
+            <li>With a blend of real turkey and venison and turkey as the #1 ingredient</li>
+            <li>Two times the tender, meaty morsels compared to Purina ONE Lamb & Rice Formula</li>
+            <li>No poultry by-product meal, artificial flavors or preservatives</li>
+            <li>Natural Sources of Glucosamine Help Support Healthy Joints</li>
+            <li>Omega-6 Fatty Acids Help Give Your Dog a Radiant Coat and Healthy Skin</li>
+            <li>Highly Digestible so More Nutrition Goes to Work Inside Your Dog</li>
+        </ul>
+
+    </main>
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>

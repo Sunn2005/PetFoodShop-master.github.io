@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao diện Công ty Cổ phần Vienovo Việt Nam</title>
+
+
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #28a745; /* Màu xanh lá cây */
+    color: #fff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 200px;
+}
+
+.column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.column p {
+    margin-bottom: 10px;
+}
+
+.column ul {
+    list-style: none;
+}
+
+.column ul li {
+    margin-bottom: 8px;
+}
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.location {
+    background: url('https://via.placeholder.com/20') no-repeat center; /* Thay bằng biểu tượng vị trí */
+}
+
+.phone {
+    background: url('https://via.placeholder.com/20') no-repeat center; /* Thay bằng biểu tượng điện thoại */
+}
+
+.email {
+    background: url('https://via.placeholder.com/20') no-repeat center; /* Thay bằng biểu tượng email */
+}
+
+.shipping-methods img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.payment-methods .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+
+.payment {
+    background: url('https://via.placeholder.com/30') no-repeat center; /* Thay bằng biểu tượng thanh toán */
+}
+
+.bank {
+    background: url('https://via.placeholder.com/30') no-repeat center; /* Thay bằng biểu tượng ngân hàng */
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>CÔNG TY CỔ PHẦN VIENOVO VIỆT NAM</h1>
+        </div>
+        <div class="content">
+            <div class="column">
+                <p><strong>Giấy phép ĐKKD số 180167333</strong><br>
+                Bằng ký lần đầu: 07/04/2020<br>
+                Nơi cấp: Sở Kế hoạch & Đầu tư Thành phố Cần Thơ</p>
+                <p><strong><span class="icon location"></span> Lô số 2, Đường Trục chính, Khu Công Nghiệp Trà Nóc 1, Phường Trà Nóc, Quận Bình Thủy, Thành phố Cần Thơ</strong></p>
+                <p><span class="icon phone"></span> 02923744445</p>
+                <p><span class="icon email"></span> contact@keos.vn</p>
+            </div>
+            <div class="column">
+                <h3>DANH MỤC HÀNG BÁN</h3>
+                <ul>
+                    <li>Sản phẩm khuyến mãi mới</li>
+                    <li>Sản phẩm nổi bật</li>
+                    <li>Sản phẩm mới ra mắt</li>
+                </ul>
+                <h3>PHƯƠNG THỨC VẬN CHUYỂN</h3>
+                <div class="shipping-methods">
+                    <img src="https://via.placeholder.com/50" alt="GHN">
+                    <img src="https://via.placeholder.com/50" alt="AhaMove">
+                </div>
+            </div>
+            <div class="column">
+                <h3>LIÊN KẾT</h3>
+                <ul>
+                    <li>Trang chủ</li>
+                    <li>Giới thiệu về Keos</li>
+                    <li>Sản phẩm</li>
+                    <li>Blog</li>
+                    <li>Liên hệ</li>
+                    <li>Kê thông tin phiếu</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h3>CHÍNH SÁCH</h3>
+                <ul>
+                    <li>Tìm kiếm</li>
+                    <li>Giới thiệu</li>
+                    <li>Liên hệ</li>
+                    <li>Điều khoản mua hàng</li>
+                    <li>Hướng dẫn thanh toán</li>
+                    <li>Chính sách đổi trả</li>
+                    <li>Chính sách giao hàng</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>PHƯƠNG THỨC THANH TOÁN</h3>
+            <div class="payment-methods">
+                <span class="icon payment"></span>
+                <span class="icon bank"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
