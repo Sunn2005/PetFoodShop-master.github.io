@@ -16,15 +16,18 @@ main h2 {
     margin-bottom: 10px;
     border-radius: 10px;
 }
+
 /* the style for the section */
 section {
-    #border-top: 1px solid #a9975b;
-    #background-color: linen;
+    border-top: 1px solid #a9975b;
+    background-color: linen;
     text-align: center;
 }
+
 section h3 {
     font-size: 90%;
 }
+
 section .container .item .item_box img {
     width: 300px;
 }
@@ -33,8 +36,8 @@ section .container .item .item_box img {
 .item_box:hover {
     font-style: italic;
     text-decoration: underline solid 2px;
-    width: auto;
 }
+
 section .container {
     display: flex;
     flex-wrap: wrap;
@@ -42,6 +45,7 @@ section .container {
     width: 1000px;
     margin: 10px auto;
 }
+
 section .container .item {
     flex-basis: 24%;
     display: flex;
@@ -50,16 +54,18 @@ section .container .item {
     text-align: center;
     background-color: linen;
 }
-section .container .item .item-box {
-    text-align: center;
 
+section .container .item .item_box {
+    text-align: center;
 }
+
 main .container .item .item_box h3 {
     font-size: 100%;
     text-align: center;
     width: 80%;
     margin: 0 auto;
 }
+
 /* the styles for links in main section */
 main a:link, main a:visited {
     text-decoration: none;

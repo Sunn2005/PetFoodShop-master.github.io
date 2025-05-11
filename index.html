@@ -9,12 +9,14 @@
     <link rel="stylesheet" href="../pet-shop-main/css/bootstrap.min.css">
     <link rel="shortcut icon" href="images/paw.png">
     <link rel="stylesheet" href="css/header_and_footer.css">
+
     <link rel="stylesheet" href="css/main_section.css">
     <link rel="stylesheet" href="css/slicknav.css">
     <script src="../pet-shop-main/js/bootstrap.js"></script>
     <script src="../pet-shop-main/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/modal.js" defer></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
@@ -59,6 +61,9 @@
                 <th class="info">
                     <h2 class="brands"><a href="information/brands.html">Brands</a></h2>
                 </th>
+                <th class="info">
+                    <h2 class="sitemap"><a href="information/sitemap.html">Sitemap</a></h2>
+                </th>
                 <th class="space">
                     <p></p>
                 </th>
@@ -98,11 +103,28 @@
                         </li>
                     </ul>
                 </li>
+                <!-- Modal đăng nhập -->
+                <div id="loginModal" class="modal">
+                    <div class="modal-content">
+                        <h2>Đăng nhập</h2>
+                        <form id="loginForm">
+                            <label for="username">Tên đăng nhập:</label>
+                            <input type="text" id="username" name="username" required>
+                            <label for="password">Mật khẩu:</label>
+                            <input type="password" id="password" name="password" required>
+                            <button type="submit">Đăng nhập</button>
+                        </form>
+                        <p>Chưa có tài khoản? <a href="Register/register.html">Đăng ký ngay</a></p>
+                    </div>
+                </div>
+
             </ul>
         </nav>
     </header>
 
 
+
+    <!-- Nội dung trang web -->
     <main id="first_page">
         <div class="main-container">
             <!-- Left Section: Slideshow -->

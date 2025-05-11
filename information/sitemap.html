@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PetShop - About Us</title>
+    <title>PetShop - Sitemap</title>
     <link rel="shortcut icon" href="../images/paw.png">
     <link rel="stylesheet" href="../css/header_and_footer.css">
     <link rel="stylesheet" href="../css/main_section.css">
@@ -16,34 +16,98 @@
             $('#nav_menu').slicknav({ prependTo: "#mobile_menu" });
         });
     </script>
+    <style>
+        /* Sitemap container styling */
+        .sitemap-container {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
 
+        .sitemap-tree {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sitemap-tree li {
+            margin: 10px 0;
+            position: relative;
+        }
+
+        .sitemap-tree li::before,
+        .sitemap-tree li::after {
+            content: '';
+            position: absolute;
+            left: -20px;
+        }
+
+        .sitemap-tree li::before {
+            border-left: 2px solid #ccc;
+            top: 0;
+            bottom: 50%;
+            height: 50%;
+            width: 20px;
+        }
+
+        .sitemap-tree li::after {
+            border-top: 2px solid #ccc;
+            top: 50%;
+            width: 20px;
+            height: 0;
+        }
+
+        .sitemap-tree li:last-child::before {
+            height: 100%;
+        }
+
+        .sitemap-tree a {
+            text-decoration: none;
+            color: #333;
+            background: #f8f9fa;
+            padding: 5px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .sitemap-tree a:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .sitemap-tree ul {
+            padding-left: 40px;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-       <table class="header1">
+        <table class="header1">
             <tr>
-                <th class="img_logo"><img src="images/paw.png" alt="Paw" height=70></th>
+                <th class="img_logo"><img src="../images/paw.png" alt="Paw" height=70></th>
                 <th class="pet_shop">
-                    <h1><a href="index.html">PetShop</a></h1>
+                    <h1><a href="../index.html">PetShop</a></h1>
                 </th>
                 <th class="space">
                     <p></p>
                 </th>
                 <th class="info">
-                    <h2 class="about_us"><a href="information/about_us.html">About Us</a></h2>
+                    <h2 class="about_us"><a href="../information/about_us.html">About Us</a></h2>
                 </th>
                 <th class="info">
-                    <h2 class="brands"><a href="information/brands.html">Brands</a></h2>
+                    <h2 class="brands"><a href="../information/brands.html">Brands</a></h2>
                 </th>
                 <th class="info">
-                    <h2 class="sitemap"><a href="information/sitemap.html">Sitemap</a></h2>
+                    <h2 class="sitemap"><a href="../information/sitemap.html">Sitemap</a></h2>
                 </th>
                 <th class="space">
                     <p></p>
                 </th>
-                <th class="img_wishlist"><a href="information/wishlist.html">
-                        <img src="images/wishlist.png" alt="Wish List" height=70 title="Wish List"></a></th>
+                <th class="img_wishlist"><a href="../information/wishlist.html">
+                        <img src="../images/wishlist.png" alt="Wish List" height=70 title="Wish List"></a></th>
             </tr>
         </table>
         <p></p>
@@ -83,35 +147,14 @@
         </nav>
     </header>
 
-    <main style="height: 550px;">
-        <h3>Information About Us</h3>
-        <div id="about_us">
-            <p>Petshop is an online pet store where loving owners can buy everything they need for animals. We do
-                everything for your convenience. Order wholesale and retail the best products for your pets from
-                our catalog. Specialists carefully select products, the range is constantly expanding. Are you
-                looking for a toy for a dog, a house for a hamster or quality means for caring for cat fur?
-                Welcome! We have prepared many pleasant surprises for you:</p><br>
-            <div id="column1">
-                <img src="about_us_img/1.png">
-                <p>a wide range of feed and accessories for animals;</p>
-                <img src="about_us_img/2.png">
-                <p>guaranteed high quality;</p>
-                <img src="about_us_img/3.png">
-                <p>delivery methods to choose from;</p>
-            </div>
-            <div id="column2">
-                <img src="about_us_img/4.png">
-                <p>payment options (bank transfer or PayPal);</p>
-                <img src="about_us_img/5.png">
-                <p>convenient catalog with photos and brief descriptions of goods;</p>
-                <img src="about_us_img/6.png">
-                <p>the convenience of making purchases in a pet store via the Internet (this option allows you to make
-                    orders in comfortable conditions from home);</p>
-            </div>
+    <main>
+        <h3>Website Sitemap</h3>
+        <div class="sitemap-container">
+            <img src="../images/sitemap.png" alt="" width="800px" height="500px">
         </div>
     </main>
 
-   <footer>
+    <footer>
         <div class="footer1">
             <h1>CÔNG TY CỔ PHẦN PETFOOD VIỆT NAM</h1>
         </div>
@@ -150,7 +193,6 @@
             <h4>CỬA HÀNG THỨC ĂN THÚ CƯNG</h4>
         </div>
     </footer>
-
 </body>
 
 </html>

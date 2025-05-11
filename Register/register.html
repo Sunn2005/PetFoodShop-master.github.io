@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register </title>
+    <link rel="shortcut icon" href="../images/paw.png">
+    <link rel="stylesheet" href="../css/header_and_footer.css">
+    <link rel="stylesheet" href="../css/main_section2.css">
+    <link rel="stylesheet" href="../css/slicknav.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="register-container">
+        <h1>Đăng ký</h1>
+        <form id="registerForm">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="confirm_password">Xác nhận mật khẩu:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+            <button type="submit">Đăng ký</button>
+        </form>
+        <p>Đã có tài khoản? <a href="../index.html">Đăng nhập</a></p>
+    </div>
+
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // Lấy thông tin từ form
+            const username = document.getElementById('username').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm_password').value;
+
+            // Regex kiểm tra username (chỉ chứa chữ cái, số, và dài từ 3-15 ký tự)
+            const usernameRegex = /^[a-zA-Z0-9]{3,15}$/;
+            if (!usernameRegex.test(username)) {
+                alert("Tên đăng nhập phải từ 3-15 ký tự và chỉ chứa chữ cái hoặc số.");
+                return;
+            }
+
+            // Regex kiểm tra email
+            const emailRegex = /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+;
+            if (!emailRegex.test(email)) {
+                alert("Vui lòng nhập địa chỉ email hợp lệ.");
+                return;
+            }
+
+            // Regex kiểm tra password (ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt)
+            const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+            if (!passwordRegex.test(password)) {
+                alert("Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ hoa, chữ thường, số và ký tự đặc biệt.");
+                return;
+            }
+
+            // Kiểm tra xác nhận mật khẩu
+            if (password !== confirmPassword) {
+                alert("Mật khẩu không khớp. Vui lòng thử lại.");
+                return;
+            }
+
+            // Lưu thông tin đăng ký vào Local Storage
+            const user = {
+                username: username,
+                email: email,
+                password: password
+            };
+            localStorage.setItem('user', JSON.stringify(user));
+
+            alert("Đăng ký thành công! Vui lòng đăng nhập.");
+            window.location.href = "../index.html"; // Chuyển đến trang có modal đăng nhập
+        });
+    </script>
+
+</body>
+
+</html>
